@@ -21,7 +21,7 @@ export const CONTACT = {
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Events", href: "/events" },
-  { label: "Leadership", href: "/leadership" },
+  { label: "Our Pastor", href: "/our-pastor" },
   { label: "Past Services", href: "/past-services" },
   { label: "Ordinances", href: "/church-ordinances" },
   { label: "Salvation", href: "/salvation-plan" },
