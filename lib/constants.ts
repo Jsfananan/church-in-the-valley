@@ -6,7 +6,7 @@ export const SITE_DESCRIPTION =
   "A welcoming church family in Milton, West Virginia with a large vision for the lost and a passion to help every believer achieve their God-given purpose.";
 
 export const CONTACT = {
-  phone: "304-743-4300",
+  phone: "304-743-4500",
   pastorPhone: "304-638-7878",
   email: "churchinthevalley.info@gmail.com",
   pastorEmail: "tnicely2@icloud.com",
