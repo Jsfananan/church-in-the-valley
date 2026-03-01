@@ -7,6 +7,10 @@ export const SITE_DESCRIPTION =
 
 export const CONTACT = {
   phone: "304-743-4300",
+  pastorPhone: "304-638-7878",
+  email: "churchinthevalley.info@gmail.com",
+  pastorEmail: "tnicely2@icloud.com",
+  pastorName: "Pastor Troy",
   address: "1173 James River Turnpike",
   city: "Milton",
   state: "WV",

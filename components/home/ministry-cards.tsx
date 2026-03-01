@@ -10,12 +10,12 @@ function MusicIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
+      width="28"
+      height="28"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
@@ -31,12 +31,12 @@ function UsersIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
+      width="28"
+      height="28"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
@@ -53,12 +53,12 @@ function CompassIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
+      width="28"
+      height="28"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
@@ -102,32 +102,27 @@ export function MinistryCards() {
               key={card.title}
               href={card.href}
               className={clsx(
-                "group relative overflow-hidden rounded-2xl aspect-[3/4] sm:aspect-[2/3]",
-                "hover:-translate-y-1 hover:shadow-2xl transition-all duration-300",
+                "group relative overflow-hidden rounded-xl",
+                "bg-gradient-to-br",
+                CARD_GRADIENTS[card.icon],
+                "p-5 sm:p-6",
+                "hover:-translate-y-1 hover:shadow-lg transition-all duration-300",
                 isVisible && "animate-fade-in"
               )}
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <div
-                className={clsx(
-                  "absolute inset-0 bg-gradient-to-b",
-                  CARD_GRADIENTS[card.icon]
-                )}
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center opacity-50 text-white">
-                <CardIcon icon={card.icon} />
-              </div>
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {card.title}
-                </h3>
-                <p className="text-sm text-white/80 leading-relaxed">
-                  {card.description}
-                </p>
+              <div className="flex items-start gap-4">
+                <div className="text-white/60 shrink-0 mt-0.5">
+                  <CardIcon icon={card.icon} />
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-white mb-1">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm text-white/80 leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
               </div>
             </Link>
           ))}

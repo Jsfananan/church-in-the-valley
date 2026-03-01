@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/home/hero-section";
 import { WelcomeSection } from "@/components/home/welcome-section";
 import { ServiceTimesSection } from "@/components/home/service-times-section";
 import { LatestSermonSection } from "@/components/home/latest-sermon-section";
-import { MinistryCards } from "@/components/home/ministry-cards";
 import { DirectionsSection } from "@/components/home/directions-section";
 import { CtaBanner } from "@/components/home/cta-banner";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
@@ -24,7 +23,6 @@ export default async function HomePage() {
       <WelcomeSection />
       <ServiceTimesSection />
       {latestSermon && <LatestSermonSection sermon={latestSermon} />}
-      <MinistryCards />
       <DirectionsSection />
       <CtaBanner />
     </>
