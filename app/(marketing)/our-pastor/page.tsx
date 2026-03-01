@@ -18,7 +18,7 @@ export default function OurPastorPage() {
           src="/images/pastor-troy.jpg"
           alt="Pastor Troy Nicely"
           fill
-          className="object-cover object-top"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
